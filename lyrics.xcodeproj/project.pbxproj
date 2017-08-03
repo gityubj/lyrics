@@ -14,6 +14,8 @@
 		1C28F1ED1F32FB8B005EB847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C28F1EB1F32FB8B005EB847 /* LaunchScreen.storyboard */; };
 		1C28F1F81F32FB8B005EB847 /* lyricsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28F1F71F32FB8B005EB847 /* lyricsTests.swift */; };
 		1C28F2031F32FB8B005EB847 /* lyricsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28F2021F32FB8B005EB847 /* lyricsUITests.swift */; };
+		1C28F2111F330615005EB847 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28F2101F330615005EB847 /* ListTableViewController.swift */; };
+		1C28F2131F330623005EB847 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C28F2121F330623005EB847 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1C28F1FE1F32FB8B005EB847 /* lyricsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lyricsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C28F2021F32FB8B005EB847 /* lyricsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lyricsUITests.swift; sourceTree = "<group>"; };
 		1C28F2041F32FB8B005EB847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C28F2101F330615005EB847 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		1C28F2121F330623005EB847 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				1C28F1E21F32FB8B005EB847 /* AppDelegate.swift */,
 				1C28F1E41F32FB8B005EB847 /* ViewController.swift */,
+				1C28F2101F330615005EB847 /* ListTableViewController.swift */,
+				1C28F2121F330623005EB847 /* EditViewController.swift */,
 				1C28F1E61F32FB8B005EB847 /* Main.storyboard */,
 				1C28F1E91F32FB8B005EB847 /* Assets.xcassets */,
 				1C28F1EB1F32FB8B005EB847 /* LaunchScreen.storyboard */,
@@ -262,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C28F2131F330623005EB847 /* EditViewController.swift in Sources */,
+				1C28F2111F330615005EB847 /* ListTableViewController.swift in Sources */,
 				1C28F1E51F32FB8B005EB847 /* ViewController.swift in Sources */,
 				1C28F1E31F32FB8B005EB847 /* AppDelegate.swift in Sources */,
 			);
@@ -514,6 +522,7 @@
 				1C28F2091F32FB8B005EB847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C28F20A1F32FB8B005EB847 /* Build configuration list for PBXNativeTarget "lyricsTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +531,7 @@
 				1C28F20C1F32FB8B005EB847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1C28F20D1F32FB8B005EB847 /* Build configuration list for PBXNativeTarget "lyricsUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +540,7 @@
 				1C28F20F1F32FB8B005EB847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
