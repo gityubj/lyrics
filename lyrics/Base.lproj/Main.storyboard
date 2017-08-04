@@ -81,13 +81,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsd-jw-UAU">
-                                            <rect key="frame" x="18" y="12" width="255" height="21"/>
+                                            <rect key="frame" x="18" y="12" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uQ-Mb-44H">
-                                            <rect key="frame" x="323" y="12" width="42" height="21"/>
+                                            <rect key="frame" x="110" y="12" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -99,19 +99,28 @@
                                                 <constraint firstAttribute="height" constant="1" id="foa-MV-Ctb"/>
                                             </constraints>
                                         </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yg-If-buW">
+                                            <rect key="frame" x="337" y="7" width="30" height="30"/>
+                                            <state key="normal" title="O"/>
+                                            <connections>
+                                                <action selector="onCheckBtn:" destination="I6U-N0-3xW" eventType="touchUpInside" id="YMK-Y3-h1L"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="2Yg-If-buW" secondAttribute="trailing" constant="8" id="1by-WX-gbl"/>
                                         <constraint firstAttribute="bottom" secondItem="ojM-pm-gdw" secondAttribute="bottom" id="6Ne-7j-96C"/>
                                         <constraint firstItem="2uQ-Mb-44H" firstAttribute="leading" secondItem="Zsd-jw-UAU" secondAttribute="trailing" constant="50" id="JML-zz-bTV"/>
                                         <constraint firstItem="Zsd-jw-UAU" firstAttribute="centerY" secondItem="1pN-qj-9zG" secondAttribute="centerY" id="JyK-C4-tA2"/>
                                         <constraint firstItem="Zsd-jw-UAU" firstAttribute="leading" secondItem="1pN-qj-9zG" secondAttribute="leadingMargin" constant="10" id="XDe-M6-Sza"/>
+                                        <constraint firstItem="2Yg-If-buW" firstAttribute="centerY" secondItem="1pN-qj-9zG" secondAttribute="centerY" id="Xlk-45-y2m"/>
                                         <constraint firstAttribute="trailing" secondItem="ojM-pm-gdw" secondAttribute="trailing" id="aJ6-tH-ayB"/>
                                         <constraint firstItem="2uQ-Mb-44H" firstAttribute="centerY" secondItem="1pN-qj-9zG" secondAttribute="centerY" id="oLQ-HD-TXW"/>
-                                        <constraint firstAttribute="trailing" secondItem="2uQ-Mb-44H" secondAttribute="trailing" constant="10" id="xUJ-lw-ZQL"/>
                                         <constraint firstItem="ojM-pm-gdw" firstAttribute="leading" secondItem="1pN-qj-9zG" secondAttribute="leading" id="yGj-Kr-Bgu"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="checkBtn" destination="2Yg-If-buW" id="L90-Rg-I4P"/>
                                     <outlet property="timeLabel" destination="2uQ-Mb-44H" id="ecE-v5-4FX"/>
                                     <outlet property="titleLabel" destination="Zsd-jw-UAU" id="56a-hv-wjb"/>
                                 </connections>
@@ -123,6 +132,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="Rih-pD-Wab">
+                        <barButtonItem key="leftBarButtonItem" title="Send" id="C3s-Te-o7r">
+                            <connections>
+                                <action selector="sendMailWithSender:" destination="PTo-QA-jNw" id="jM5-GY-8Yl"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="C1y-Tv-DZM"/>
                     </navigationItem>
                     <connections>

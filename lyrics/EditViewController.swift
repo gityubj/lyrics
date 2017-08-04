@@ -19,6 +19,8 @@ class EditViewController : UITableViewController {
         self.collectionView?.delegate = self
         self.collectionView?.dataSource = self
     }
+    
+    @IBAction func onPressedSaveBtn(_ sender:Any) {}
 }
 
 extension EditViewController {
@@ -36,6 +38,13 @@ extension EditViewController {
             return cell
         }
         return UITableViewCell()
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.lyricsArr.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
 }
 
